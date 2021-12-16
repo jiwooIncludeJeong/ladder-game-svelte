@@ -16,7 +16,7 @@
 	</div>
 	<div class="enter">
 		<p>몇 명 당첨입니까?</p>
-		<input type="number" bind:value={select} placeholder="몇 명의 사용자입니까?" min={1}  >
+		<input type="number" bind:value={select} placeholder="몇 명의 사용자입니까?" min={1}  max={num}>
 	</div>
 	<div class="buttonArea">
 		<a href="/play?num={num}&select={select}">
@@ -44,15 +44,17 @@
     }
 
     input {
-        max-width: 80px;
+        width: 80px;
         align-self: center;
     }
 
     button {
+				padding:12px;
         width:200px;
         background-color: #ff3e00;
         color:white;
         border: 1px solid white;
+        align-self: center;
     }
 
     .enter {
