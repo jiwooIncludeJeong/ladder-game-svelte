@@ -9,14 +9,14 @@
 </script>
 
 <main>
-	<h1>벙커키즈 사다리타기</h1>
+	<h1>벙커키즈 뽑기</h1>
 	<div class="enter">
 		<p>몇 명 참여합니까?</p>
-		<input type="number" bind:value={num} placeholder="몇 명의 사용자입니까?" min={1}  >
+		<input type="number" bind:value={num} placeholder="몇 명 참여합니까?" min={1}  >
 	</div>
 	<div class="enter">
 		<p>몇 명 당첨입니까?</p>
-		<input type="number" bind:value={select} placeholder="몇 명의 사용자입니까?" min={1}  max={num}>
+		<input type="number" bind:value={select} placeholder="몇 명의 당첨입니까?" min={1}  max={num}>
 	</div>
 	<div class="buttonArea">
 		<a href="/play?num={num}&select={select}">
